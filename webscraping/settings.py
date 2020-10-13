@@ -25,7 +25,7 @@ SECRET_KEY = 'k=w(q1%**1)zlg1xa9j$$@y^+cc_(2#-uqdqi2v#4bips22x49'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1']
+ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'scrap.apps.ScrapConfig',
+    'scraper.apps.ScraperConfig'
 ]
 
 MIDDLEWARE = [
@@ -47,7 +49,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'scrap.apps.scrapConfig'
 ]
 
 ROOT_URLCONF = 'webscraping.urls'
