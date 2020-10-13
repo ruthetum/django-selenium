@@ -26,3 +26,20 @@ class ComeduSpider(scrapy.Spider):
 
             item.save()
             yield item
+
+"""
+https://www.youtube.com/watch?v=VvFC93vAB7U
+cs
+- url : https://cs.skku.edu/news/recruit/list
+//*[@id="boardList"]/tbody/tr[1]/td[2]
+//*[@id="boardList"]/tbody/tr[2]/td[2]
+
+coe
+- url : https://coe.skku.edu/coe/community/under_notice.do
+
+
+skku
+- url : https://www.skku.edu/skku/campus/skk_comm/notice01.do
+
+
+"""
