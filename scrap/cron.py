@@ -1,2 +1,0 @@
-def crawling():
-    print("Hello")
