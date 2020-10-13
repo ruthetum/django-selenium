@@ -5,6 +5,14 @@
     </head>
     <body>
         <div>
+            {% if notices %}
+                {% for notice in notices %}
+                    <div>
+                        <span><a href="{{notice.link}}" target="_blank">{{notice.title}}</a></span>
+                        <span>{{notice.date}}</span>
+                    </div>
+                {% endfor %}
+			{% endif %}
         </div>
     </body>
 </html>
