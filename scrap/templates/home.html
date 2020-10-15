@@ -5,8 +5,42 @@
     </head>
     <body>
         <div>
-            {% if notices %}
-                {% for notice in notices %}
+            <h2>컴교</h2>
+            {% if notices1 %}
+                {% for notice in notices1 %}
+                    <div>
+                        <span><a href="{{notice.link}}" target="_blank">{{notice.title}}</a></span>
+                        <span>{{notice.date}}</span>
+                    </div>
+                {% endfor %}
+			{% endif %}
+        </div>
+        <div>
+            <h2>컴공</h2>
+            {% if notices2 %}
+                {% for notice in notices2 %}
+                    <div>
+                        <span><a href="{{notice.link}}" target="_blank">{{notice.title}}</a></span>
+                        <span>{{notice.date}}</span>
+                    </div>
+                {% endfor %}
+			{% endif %}
+        </div>
+        <div>
+            <h2>사범대</h2>
+            {% if notices3 %}
+                {% for notice in notices3 %}
+                    <div>
+                        <span><a href="{{notice.link}}" target="_blank">{{notice.title}}</a></span>
+                        <span>{{notice.date}}</span>
+                    </div>
+                {% endfor %}
+			{% endif %}
+        </div>
+        <div>
+            <h2>SKKU</h2>
+            {% if notices4 %}
+                {% for notice in notices4 %}
                     <div>
                         <span><a href="{{notice.link}}" target="_blank">{{notice.title}}</a></span>
                         <span>{{notice.date}}</span>
