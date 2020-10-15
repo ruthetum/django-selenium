@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'scrap.apps.ScrapConfig',
-    'scraper.apps.ScraperConfig'
+    'scraper.apps.ScraperConfig',
 ]
 
 MIDDLEWARE = [
